@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Vector mapping with open data + Mapbox GL</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.7.0/mapbox-gl.css' rel='stylesheet' />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.7.0/mapbox-gl.js'></script>
+
+<script src='resources/js/jquery/jquery-1.10.1.min.js'></script>
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+  #overlay {
+	  left: 12px;
+	  top: 12px;
+	  width: 224px;
+	  padding: 0 16px;
+	  background: rgba(0,0,0,0.68);
+	  border-radius: 4px 4px;
+	  color: #FFF;
+	  z-index: 100;
+	  position: absolute;
+
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	font-size: 0.76em;
+	line-height: 1.5em;
+	color: #FFF;
+  }
+  .action {
+	 border-bottom: 1px dotted #999;
+	 padding-bottom: 0;
+	 display: inline;
+  }
+  .action:hover {
+	 cursor:pointer;
+	 /*color: #ECCB1D;*/
+	 border-bottom: 1px dotted #ECCB1D;
+  }
+   .action.disabled{
+	cursor:default;
+	color:#CCCCCC;
+   }
+    .action.selected{
+
+	color:#ECCB1D;
+   }
+</style>
+</head>
+<body>
+<div id='map'></div>
+<div id='overlay'>
+	<p>A vector map made with OS OpenMap Local (Ordnance Survey) and INSPIRE index polygons (Land Registry) rendered on the client using the Mapbox GL Javascript API.</p>
+	<p>Requires Firefox, Chrome or Safari with WebGL enabled.</p>
+	<p>Right-click to rotate. Click the compass icon top-right to reset north.</p>
+    <p>
+    <div>Position map on:</div>
+    <div class="action flyto" data-flyto-zoomlatlng="16.1/50.938130/-1.470587">Explorer House</div>&nbsp;&bull;
+    <div class="action flyto" data-flyto-zoomlatlng="16.1/50.9210/-1.4423">Southampton</div>&nbsp;&bull;
+    <p><em>Attribution:</em></p>
+    <p>This information is subject to Crown copyright and is reproduced with the permission of Land Registry.</p>
+    <p>&copy; Crown copyright and database rights 2015 Ordnance Survey 100026316.</p>
+</div>
+<script>
+var map;
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ3JhaGFtZHVubG9wIiwiYSI6Im1lN3d1amMifQ.FMJv_VrUbEQSp_EqaKB4mw';
+
+
+if (!mapboxgl.util.supported()) {
+  alert('Your browser does not support Mapbox GL');
+} else {
+	map = new mapboxgl.Map({
+	  container: 'map',
+	  style: 'resources/style.json', //style file specifies the data source
+	  center: [50.9210,-1.4423],
+	  zoom: 13.1,
+	  minZoom: 6,
+	  maxZoom: 18,
+	  hash: true
+	});
+}
+
+map.addControl(new mapboxgl.Navigation({}));
+
+$(document).ready(function(){
+
+	$(".action.flyto").on("click",function(e){
+		flyto(e.target)
+
+	})
+
+	setup_map_events()
+})
+
+function setup_map_events(){
+	if(null!=map){
+
+	}else{
+		setTimeout(	setup_map_events,20)
+	}
+}
+
+function flyto(div){
+	var arr=$(div).attr("data-flyto-zoomlatlng").split("/")
+	map.flyTo(new mapboxgl.LatLng(arr[1], arr[2]), arr[0], 0)
+}
+
+</script>
+
+
+</body>
+</html>

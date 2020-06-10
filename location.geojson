@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Description": "Where I'm at",
+        "marker-size": "medium",
+        "marker-symbol": "pitch",
+        "marker-color": "#f00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4706766605377197,
+          50.93835135578306
+        ]
+      }
+    }
+  ]
+}

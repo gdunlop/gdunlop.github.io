@@ -1,0 +1,39 @@
+{
+  "version": 6,
+  "constants": {
+    "@background": "#808080",
+    "@road": "#000000",
+    "@building": "#000000",
+    "@building-outline": "#000000"
+  },
+  "sources": {
+    "osopenmap": {
+      "type": "vector",
+      "url": "mapbox://grahamdunlop.299036ad"
+    }
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "paint": {
+      "background-color": "@background"
+    }
+  }, {
+    "id": "road",
+    "type": "line",
+    "source": "osopenmap",
+    "source-layer": "road",
+    "paint": {
+      "line-color": "@road"
+    }
+  }, {
+    "id": "building",
+    "type": "line",
+    "source": "osopenmap",
+    "source-layer": "building",
+    "paint": {
+      "line-color": "@building-outline",
+      "polygon-fill": "@building"
+    }
+  }]
+}

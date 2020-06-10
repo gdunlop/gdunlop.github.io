@@ -1,0 +1,35 @@
+{
+  "version": 7,
+  "constants": {
+    "@sans_md": "Open Sans Semibold, Arial Unicode MS Bold",
+
+    "@linkname": "#333",
+    "@text_halo": "rgba(255,255,255,0.9)",
+
+    "@background": "#808080",
+    "@river": "#0000f0",
+    "@building": "#000000",
+    "@building-outline": "#000000"
+  },
+  "sources": {
+    "osopenwater": {
+      "type": "vector",
+      "url": "mapbox://grahamdunlop.5da4503c"
+    }
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "paint": {
+      "background-color": "@background"
+    }
+  }, {
+    "id": "watercourselink",
+    "type": "line",
+    "source": "osopenwater",
+    "source-layer": "watercourselink",
+    "paint": {
+      "line-color": "@river"
+    }
+  }]
+}

@@ -1,0 +1,335 @@
+{
+  "version": 7,
+  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
+  "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
+  "constants": {
+	"@sans": "Open Sans Regular, Arial Unicode MS Regular",
+    "@sans_it": "Open Sans Italic, Arial Unicode MS Regular",
+    "@sans_md": "Open Sans Semibold, Arial Unicode MS Bold",
+    "@sans_bd": "Open Sans Bold, Arial Unicode MS Bold",
+
+    "@land": "#FFF",
+	"@water": "#8E969F",
+	"@foreshore": "#FFF",
+	"@settlement": "#EFEFEF",
+	"@woodland": "#D2D9D4",
+	"@functionalsite": "rgb(213,244,248)",
+	"@functionalsiteold": "#F3F3F3",
+	"@building": "#DDD",
+	"@road": "#AAA",
+	"@case": "#FFF",
+	"@pedestrians": "#BBB",
+
+	"@land-grey": "#ebebeb",
+    "@water-grey": "#85919f",
+	"@water-outline-grey": "rgb(0,169,202)",
+	"@woodland-grey": "#B7C4BB",
+    "@settlement-grey": "#D9D9D9",
+    "@building-grey": "#c8c8c8",
+    "@road-grey": "#FFF",
+    "@case-grey": "#A0A0A0",
+    "@pedestrians-grey": "#EEE",
+
+	"@track": "#AAA",
+    "@tracktunnel": "#BBB",
+
+    "@placename": "#333",
+    "@roadname": "#666",
+    "@text_halo": "rgba(255,255,255,0.9)",
+
+	"@quintile5": "#75429C",
+	"@quintile4": "#966FB4",
+	"@quintile3": "#BAA1CE",
+	"@quintile2": "#D2C2DF",
+	"@quintile1": "#E5DDED",
+	"@contour": "#a0794b",
+
+	"@land-os": "rgb(252,252,250)",
+	"@water-os": "rgb(213,244,248)",
+	"@foreshore-os": "rgb(230,235,228)",
+	"@foreshore-stroke-os": "#9acfe1",
+	"@water-outline-os": "rgb(0,169,202)",
+	"@woodland-os": "rgb(209,240,206)",
+	"@building-os": "rgb(251,224,191)",
+	"@aroad-os": "rgb(255,135,158)",
+	"@broad-os": "rgb(255,192,115)",
+	"@minor-road-os": "rgb(255,243,181)",
+	"@local-street-os": "rgb(254,254,254)",
+	"@pedestrians-os": "rgb(234,234,234)",
+	"@primary-road-os": "rgb(55,195,91)",
+	"@motorway-os": "rgb(6,177,202)",
+	"@case-os": "rgb(80,80,80)",
+	"@track-os": "rgb(100,100,100)",
+
+	"@local_street_width": {
+        "base": 1,
+        "stops": [[11, 0.3], [12, 0.6], [13, 1.3], [14, 2.5], [15, 4]]
+    },
+    "@local_street_casing_width": {
+        "base": 1,
+        "stops": [[14, 3.5], [15, 5]]
+    },
+    "@pedestrian_street_width": {
+        "base": 1,
+        "stops": [[11, 0.3], [12, 0.6], [13, 1.3], [14, 2.5], [15, 4]]
+    },
+    "@pedestrian_street_casing_width": {
+        "base": 1,
+        "stops": [[14, 3.5], [15, 5]]
+    },
+	"@minor_road_width": {
+        "base": 1,
+        "stops": [[10, 0.5], [11, 0.75], [12, 1.2], [13, 2], [14, 3], [15, 4]]
+    },
+    "@minor_road_casing_width": {
+        "base": 1,
+        "stops": [[13, 2.8], [14, 4], [15, 5]]
+    },
+	"@b_road_width": {
+        "base": 1,
+        "stops": [[9, 0.4],[10, 0.75], [11, 1.2], [12, 2], [13, 3], [14, 4], [15, 5]]
+    },
+    "@b_road_casing_width": {
+        "base": 1,
+        "stops": [[12, 2.8], [13, 4], [14, 5], [15, 6]]
+    },
+	"@a_road_width": {
+        "base": 1,
+        "stops": [[8, 0.4], [9, 0.75], [10, 1], [11, 1.75], [12, 2.25], [13, 3], [14, 4], [15, 6]]
+    },
+    "@a_road_casing_width": {
+        "base": 1,
+        "stops": [[11, 2.5], [12, 3], [13, 4], [14, 5], [15, 7]]
+    },
+	"@primary_width": {
+        "base": 1,
+        "stops": [[5, 0.15], [6, 0.3], [7, 0.6], [8, 0.75], [9, 1.25], [10, 2], [11, 2.5], [12, 3], [13, 5], [14, 7.5], [15, 10]]
+    },
+    "@primary_casing_width": {
+        "base": 1,
+        "stops": [[10, 2.8], [11, 3.5], [12, 4], [13, 6], [14, 8.5], [15, 11]]
+    },
+	"@motorway_width": {
+      "base": 1,
+      "stops": [[5, 0.3], [6, 0.6], [7, 0.75], [8, 1], [9, 1.75], [10, 2.25], [11, 3], [12, 4], [13, 5], [14, 7.5], [15, 10]]
+    },
+    "@motorway_casing_width": {
+      "base": 1,
+      "stops": [[10, 3], [11, 4], [12, 5], [13, 6], [14, 8.5], [15, 11]]
+    }
+  },
+  "sources": {
+    "osopenmap": {
+      "type": "vector",
+      "url": "mapbox://grahamdunlop.299036ad"
+    }
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "paint": {
+      "background-color": "@land"
+    }
+  }, {
+    "id": "lr_index_polygons",
+    "type": "line",
+    "source": "osopenmap",
+    "source-layer": "lr_index_polygons",
+    "paint": {
+      "line-color": "@woodland-os",
+      "line-width": 2
+    }
+  }, {
+    "id": "os_openmap_foreshore",
+    "source": "osopenmap",
+    "source-layer": "foreshore",
+    "type": "fill",
+    "paint": {
+      "fill-color": "@land",
+      "fill-opacity": 0.15
+    }
+  }, {
+    "id": "os_openmap_tidal_water",
+    "source": "osopenmap",
+    "source-layer": "tidalwater",
+	"type": "fill",
+    "paint": {
+      "fill-color": "@water"
+    }
+  }, {
+	 "id": "os_openmap_functional_site",
+	 "source": "osopenmap",
+	 "source-layer": "functionalsite",
+	 "type": "fill",
+	 "paint": {
+		"fill-color": "@functionalsite"
+    }
+   }, {
+	 "id": "os_openmap_woodland",
+	 "source": "osopenmap",
+	 "source-layer": "woodland",
+	 "type": "fill",
+	 "paint": {
+	   "fill-color": "@woodland"
+	}
+   }, {
+	 "id": "os_openmap_surfacewater_area",
+	 "source": "osopenmap",
+	 "source-layer": "surfacewaterarea",
+	 "type": "fill",
+	 "paint": {
+	   "fill-color": "@water"
+	}
+   }, {
+	  "id": "os_openmap_building",
+	  "source": "osopenmap",
+	  "source-layer": "building",
+	  "minzoom": 9,
+	  "type": "fill",
+	  "paint": {
+		"fill-color": "@building",
+		"fill-opacity": {
+		  "base": 1,
+		  "stops": [[9, 0.15], [10, 0.25], [11, 0.35], [12, 0.5], [13, 0.75], [14, 1]]
+		}
+	  }
+  }, {
+    "id": "os_openmap_railtrack",
+    "source": "osopenmap",
+    "source-layer": "railwaytrack",
+    "filter": [ "==", "classifica", "Single Track", "Narrow Gauge"],
+    "type": "line",
+    "paint": {
+        "line-color": "@track",
+        "line-dasharray": [0.5, 0.5],
+        "line-width": {
+             "base": 1,
+             "stops": [[10, 1], [11, 1.5], [13, 2], [14, 3], [15, 4]]
+        }
+    }
+  }, {
+	 "id": "os_openmap_railtrack_multi",
+	 "source": "osopenmap",
+	 "source-layer": "railwaytrack",
+	 "filter": [ "==", "classifica", "Multi Track"],
+	 "type": "line",
+	 "paint": {
+	   "line-color": "@track",
+        "line-dasharray": [0.3, 0.3],
+        "line-width": {
+             "base": 1,
+             "stops": [[10, 3], [11, 3.5], [13, 4], [14, 5], [15, 6]]
+	   }
+	 }
+	}, {
+	 "id": "os_openmap_railtrack_centre",
+	 "source": "osopenmap",
+	 "source-layer": "railwaytrack",
+	 "filter": [ "==", "classifica", "Multi Track"],
+	 "type": "line",
+	 "paint": {
+	   "line-color": "@case",
+	   "line-width": 0.5,
+	   "line-opacity": {
+		 "base": 1,
+		 "stops": [[10, 0], [11, 1]]
+	   }
+	 }
+	}, {
+    "id": "os_openmap_railtunnel",
+    "source": "osopenmap",
+    "source-layer": "railwaytunnel",
+    "type": "line",
+    "paint": {
+        "line-color": "@tracktunnel",
+        "line-opacity": 0.5,
+        "line-dasharray": [0.3, 0.3],
+        "line-width": {
+             "base": 1,
+             "stops": [[10, 2], [11, 3], [12, 4], [14, 6], [15, 8]]
+        }
+    }
+  }, {
+    "id": "os_openmap_roadtunnel",
+    "source": "osopenmap",
+    "source-layer": "roadtunnel",
+    "type": "line",
+    "paint": {
+        "line-color": "@road",
+		"line-opacity": 0.5,
+        "line-width": {
+             "base": 1,
+             "stops": [[11, 3], [12, 4], [14, 6], [15, 8]]
+        }
+    }
+  }, {
+	 "id": "os_openmap_primary_road",
+	 "source": "osopenmap",
+	 "source-layer": "road",
+	 "filter": ["in", "classifica", "Primary Road", "Priamry Road, Collapsed Dual Carriageway"],
+	 "type": "symbol",
+	 "layout": {
+	   "text-field": "{distname}",
+	   "text-padding": 2,
+	   "text-font": "@sans_md",
+	   "text-transform": "uppercase",
+	   "text-max-size": 18,
+	   "text-max-angle": 28.65,
+	   "symbol-placement": "line",
+	   "icon-allow-overlap": true,
+	   "symbol-min-distance": 60
+	 },
+	 "paint": {
+	 "text-color": "@roadname",
+	   "text-halo-color": "@text_halo",
+	   "text-halo-width": 1.5,
+	   "text-size": 8
+	 }
+  }, {
+	 "id": "os_openmap_ab_road",
+	 "source": "osopenmap",
+	 "source-layer": "road",
+	 "filter": ["in", "classifica", "A Road", "A Road, Collapsed Dual Carriageway", "B Road", "B Road, Collapsed Dual Carriageway"],
+	 "type": "symbol",
+	 "layout": {
+	   "text-field": "{distname}",
+	   "text-padding": 2,
+	   "text-font": "@sans_md",
+	   "text-transform": "uppercase",
+	   "text-max-size": 18,
+	   "text-max-angle": 28.65,
+	   "symbol-placement": "line",
+	   "icon-allow-overlap": true,
+	   "symbol-min-distance": 60
+	 },
+	 "paint": {
+	 "text-color": "@roadname",
+	   "text-halo-color": "@text_halo",
+	   "text-halo-width": 1.5,
+	   "text-size": 8
+	 }
+  }, {
+	 "id": "os_openmap_minor_local",
+	 "source": "osopenmap",
+	 "source-layer": "road",
+	 "filter": ["in", "classifica", "Minor Road", "Local Street", "Pedestrianised Street", "Private Road Publicly Accessible"],
+	 "type": "symbol",
+	 "layout": {
+	   "text-field": "{distname}",
+	   "text-padding": 1,
+	   "text-font": "@sans_md",
+	   "text-transform": "uppercase",
+	   "symbol-placement": "line",
+	   "icon-allow-overlap": true,
+	   "symbol-min-distance": 24
+	 },
+	 "paint": {
+	 "text-color": "@roadname",
+	   "text-halo-color": "@text_halo",
+	   "text-halo-width": 1.5,
+	   "text-size": 8
+	 }
+  }
+
+  ]
+}
