@@ -4,7 +4,7 @@ title: Vector tiles remixed
 ---
 Earlier this year I looked briefly at [vector maps in the browser]({{site.baseurl}}/Vector-maps-in-the-browser) using the tools and services provided by Mapbox. This post delves deeper; we'll create Mapbox Vector Tiles (MVT) without using the Mapbox stack, and for good measure we'll use OS mapping data.
 
-###Mapbox-ing clever
+### Mapbox-ing clever
 
 Mapbox has gained a lot of followers (and paying customers I daresay) by releasing slick tools combined with a suite of hosted services that integrate together really well. And of course they have great mapping data; the global, community-driven [OpenStreetMap](http://openstreetmap.org) (OSM). Most if not all Mapbox code is [freely available](https://github.com/mapbox) and likewise there are [open specifications](https://www.mapbox.com/developers/) for several of the fundamental parts, including the [MVT specification](https://www.mapbox.com/developers/vector-tiles/).
 
@@ -12,7 +12,7 @@ As my [earlier article]({{site.baseurl}}/Vector-maps-in-the-browser) demonstrate
 
 So if it's so easy to work with Mapbox tools and hosted services, why would you want to do things differently?
 
-###Keep you options open
+### Keep you options open
 
 The MVT specification is open, and as a result there is a growing list of tools created by the developer community that [implement the MVT spec](https://github.com/mapbox/awesome-vector-tiles). This gives you scope to explore alternative implementations and find the one that best suits your needs. It's also a good way to get your hands dirty and learn about the nitty gritty of vector tiles.
 
@@ -27,7 +27,7 @@ In summary we will aim to:-
 * Generate the tiles without using any of the Mapbox stack
 * Write a simple client or two to render vector tiles
 
-###Baking vector tiles
+### Baking vector tiles
 
 First off you don't actually _bake_ vector tiles but the analogy works on several levels:-
 
@@ -44,7 +44,7 @@ As you can see this is a binary file, though a few text strings appear as this e
 
 What does it actually look like as a map? We'll get to that. Basically it is up to you, using the client of your choice along with a set of instructions that define how to style the content.
 
-###Workflow
+### Workflow
 
 Here is an illustration of the workflow we will follow to create and render vector tiles:
 
@@ -63,7 +63,7 @@ The remainder of this post works through the following steps:
 
 Grab a cuppa and I'll see you back here in 10.
 
-###Install and test Tilemaker
+### Install and test Tilemaker
 
 Follow the instructions to [install Tilemaker](https://github.com/systemed/tilemaker#installing). It requires OS X, Ubuntu or Fedora. Installation on OS X is particularly easy with [Homebrew](http://brew.sh).
 
@@ -75,7 +75,7 @@ Run Tilemaker to generate vector tiles from the OSM data extract. For example:-
 
 This uses default configuration files and should create a hierarchy of `.pbf` files using the familiar [z/x/y layout](https://www.mapbox.com/help/how-web-maps-work/#tiles-and-zoom-levels). If all you want to do is generate vector tiles from OSM data extracts you can stop reading now and go do something else.
 
-###Prepare OS data
+### Prepare OS data
 
 Download some OS mapping data in Shapefile format. You can [browse all the available products](https://www.ordnancesurvey.co.uk/business-and-government/products/opendata-products-grid.html) but I recommend [Vector Map District (VMD)](https://www.ordnancesurvey.co.uk/business-and-government/products/vectormap-district.html) or [Open Map Local](https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-map-local.html).
 
@@ -87,11 +87,11 @@ Alternatively, if you are a QGIS user you may prefer to download [full-GB covera
 
 ![Some vector layers from VMD]({{ site.baseurl}}/images/outline.png)
 
-###Configure and run Tilemaker
+### Configure and run Tilemaker
 
 *To-do*
 
-###Render vector tiles
+### Render vector tiles
 
 This image shows our home-baked vector tiles being rendered in different clients. One uses [Tangram](http://mapzen.com/tangram) and is rendering roads, buildings and tidal boundaries - all pure vector data from our tiles. The other is [Mapbox GL](https://www.mapbox.com/mapbox-gl-js/examples/) and combines a Mapbox-hosted vector map with our tidal boundaries added as a vector source. In both cases the vector tiles are being served up locally from the `tiles` directory created by Tilemaker.
 
