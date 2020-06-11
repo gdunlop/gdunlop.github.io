@@ -8,13 +8,13 @@ Read the background to this project or skip right to the end to see the map.
 
 ### Inspiration
 
-Several years ago I read Ben Fry's book [Visualizing Data](http://www.amazon.com/exec/obidos/ASIN/0596514557/ref=nosim/benfrycom-20) and was impressed by `zipdecode` - an [interactive zipcode tool](http://benfry.com/zipdecode/) built using Processing. It was a simple dots-on-a-map visualisation of all US zipcodes with an added &quot;wow&quot; factor - start typing a zipcode and the map would zoom in/out and all matching zipcodes would light up.
+Several years ago I read Ben Fry's book [Visualizing Data](http://www.amazon.co.uk/exec/obidos/ASIN/0596514557/ref=nosim/benfrycom-20) and was impressed by `zipdecode` - an [interactive zipcode tool](http://benfry.com/zipdecode/) built using Processing. It was a simple dots-on-a-map visualisation of all US zipcodes with an added &quot;wow&quot; factor - start typing a zipcode and the map would zoom in/out and all matching zipcodes would light up.
 
 ![Interactive zipcodes using Processing]({{ site.baseurl }}/images/zip-decode.png)
 
 ### Perspiration
 
-Around this time I recruited an intern into OS Labs for 6 weeks - Joseph Braybrook. He mentioned Minecraft during interview, so naturally the first task I set him was to [build a Minecraft version of Great Britain](http://www.ordnancesurvey.co.uk/innovate/developers/minecraft-map-britain.html). The result got some [great press coverage](http://www.stipso.com/blog/2013/09/30/ordnance-survey-minecraft-viral-marketing) and the story has a happy ending as Joe now works full-time for OS (but I think he's gone off Minecraft).
+Around this time I recruited an intern into OS Labs for 6 weeks - Joseph Braybrook. He mentioned Minecraft during interview, so naturally the first task I set him was to [build a Minecraft version of Great Britain](http://www.ordnancesurvey.co.uk/innovate/developers/minecraft-map-britain.html). The result got some great press coverage and the story has a happy ending as Joe took on a permanent role with OS.
 
 The remainder of Joe's internship was spent re-creating the  `zipdecode` use case incorporating OS mapping and postcode data. This worked great as a desktop application built in Processing but performance wasn't great and there was no chance of getting it working in a web browser.
 
@@ -36,7 +36,7 @@ Which brings me to Tableau. In the space of an hour I was able to sign up to [Ta
 
 Tableau's map stack is by Stamen and provides a good selection of styling and content options. The only data preparation required was to transform Code-Point Open co-ordinates to web mercator using the geospatial Swiss Army knife that is `ogr2ogr` (other brands of geospatial utility knife are available).
 
-### [Visualisation](id:mapanchor)
+### Visualisation
 
 If you read this this far, thanks for reading. Here's the map...
 
