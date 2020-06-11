@@ -6,13 +6,13 @@ An interactive map of 1.6 million postcodes in Great Britain using [Tableau Publ
 
 Read the background to this project or skip right to the end to see the map.
 
-### Inspiration ###
+### Inspiration
 
 Several years ago I read Ben Fry's book [Visualizing Data](http://www.amazon.com/exec/obidos/ASIN/0596514557/ref=nosim/benfrycom-20) and was impressed by `zipdecode` - an [interactive zipcode tool](http://benfry.com/zipdecode/) built using Processing. It was a simple dots-on-a-map visualisation of all US zipcodes with an added &quot;wow&quot; factor - start typing a zipcode and the map would zoom in/out and all matching zipcodes would light up.
 
 ![Interactive zipcodes using Processing]({{ site.baseurl }}/images/zip-decode.png)
 
-### Perspiration ###
+### Perspiration
 
 Around this time I recruited an intern into OS Labs for 6 weeks - Joseph Braybrook. He mentioned Minecraft during interview, so naturally the first task I set him was to [build a Minecraft version of Great Britain](http://www.ordnancesurvey.co.uk/innovate/developers/minecraft-map-britain.html). The result got some [great press coverage](http://www.stipso.com/blog/2013/09/30/ordnance-survey-minecraft-viral-marketing) and the story has a happy ending as Joe now works full-time for OS (but I think he's gone off Minecraft).
 
@@ -20,7 +20,7 @@ The remainder of Joe's internship was spent re-creating the  `zipdecode` use cas
 
 ![Interactive postcodes using Processing]({{ site.baseurl }}/images/postcode-finder.png)
 
-### Exasperation ###
+### Exasperation
 
 In the meantime I've played around with a lot of geo and web code libraries, platforms and applications and the &quot;interactive postcode map&quot; is my favoured use case - after all, how hard can it be to build a performant web map that is capable of handling millions of features with a high degree of interactivity?
 
@@ -30,7 +30,7 @@ As a big fan of [Eric Fischer](https://www.mapbox.com/about/team/#eric-fischer) 
 
 Next up I tried [CartoDB](https://cartodb.com/) which I've used successfully for lots of other map visualisation projects, which meant I hit the 50MB limit on their free plan very quickly and was not inclined to take on a paid subscription.
 
-### Tribulation ###
+### Tribulation
 
 Which brings me to Tableau. In the space of an hour I was able to sign up to [Tableau Public](https://public.tableau.com/s/), load up the Code-Point Open data and build a simple map view with wildcard search on postcode. There's a generous 10GB of storage on the free tier and a polished desktop app which I downloaded on OS X.
 

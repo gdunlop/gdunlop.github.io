@@ -1,5 +1,5 @@
 ---
 layout: post
-title: Test article
+title: Hello world, revisited
 ---
 the quick brown fox etc etc
