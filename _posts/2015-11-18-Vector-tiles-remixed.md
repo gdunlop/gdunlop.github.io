@@ -12,7 +12,7 @@ As my [earlier article]({{site.baseurl}}/Vector-maps-in-the-browser) demonstrate
 
 So if it's so easy to work with Mapbox tools and hosted services, why would you want to do things differently?
 
-### Keep you options open
+### Keep your options open
 
 The MVT specification is open, and as a result there is a growing list of tools created by the developer community that [implement the MVT spec](https://github.com/mapbox/awesome-vector-tiles). This gives you scope to explore alternative implementations and find the one that best suits your needs. It's also a good way to get your hands dirty and learn about the nitty gritty of vector tiles.
 
@@ -67,7 +67,7 @@ Grab a cuppa and I'll see you back here in 10.
 
 Follow the instructions to [install Tilemaker](https://github.com/systemed/tilemaker#installing). It requires OS X, Ubuntu or Fedora. Installation on OS X is particularly easy with [Homebrew](http://brew.sh).
 
-Download an OSM data extract so you can test Tilemaker. Country and regions can be downloaded from [Geofabrik](http://download.geofabrik.de), but for our purposes a city-sized extract is better. Luckily these are available from Mapzen as [Metro Extracts](https://mapzen.com/data/metro-extracts/).
+Download an OSM data extract so you can test Tilemaker. Country and regions can be downloaded from [Geofabrik](http://download.geofabrik.de), but for our purposes a city-sized extract is better. Luckily these are available from Interline as [OSM Extracts](https://www.interline.io/osm/extracts/).
 
 Run Tilemaker to generate vector tiles from the OSM data extract. For example:-
 
