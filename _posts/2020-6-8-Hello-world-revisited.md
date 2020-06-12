@@ -4,7 +4,7 @@ title: Hello world, revisited
 ---
 It's 5 years since I said [Hello World]({{site.baseurl}}/Hello-world) with my first blog post.
 
-In the meantime it's become much easier to create a blog like this using [GitHub Pages](https://pages.github.com) and it still costs absolutely nothing.
+In the meantime it's become much easier to create a blog like this using [GitHub Pages](https://pages.github.com) and it still costs nothing so long as you stay within the generous size and usage limits.
 
 ## Jekyll and hide
 I orginally used a third-party tool called Jekyll to manage blog posts, creating a static website and pushing it to GitHub.
