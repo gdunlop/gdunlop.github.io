@@ -16,7 +16,7 @@ Several years ago I read Ben Fry's book [Visualizing Data](http://www.amazon.co.
 
 Around this time I recruited an intern into OS Labs for 6 weeks - Joseph Braybrook. He mentioned Minecraft during interview, so naturally the first task I set him was to [build a Minecraft version of Great Britain](http://www.ordnancesurvey.co.uk/innovate/developers/minecraft-map-britain.html). The result got some great press coverage and the story has a happy ending as Joe took on a permanent role with OS.
 
-The remainder of Joe's internship was spent re-creating the  `zipdecode` use case incorporating OS mapping and postcode data. This worked great as a desktop application built in Processing but performance wasn't great and there was no chance of getting it working in a web browser.
+The remainder of Joe's internship was spent re-creating `zipdecode` using Ordnance Survey data. This worked great as a desktop application built in Processing but performance wasn't great and there was no chance of getting it working in a web browser.
 
 ![Interactive postcodes using Processing]({{ site.baseurl }}/images/postcode-finder.png)
 
@@ -24,11 +24,11 @@ The remainder of Joe's internship was spent re-creating the  `zipdecode` use cas
 
 In the meantime I've played around with a lot of geo and web code libraries, platforms and applications and the &quot;interactive postcode map&quot; is my favoured use case - after all, how hard can it be to build a performant web map that is capable of handling millions of features with a high degree of interactivity?
 
-Pretty hard it turns out, especially if you have seldom-used programming muscles like me and want to minimise your investment (time and money).
+Pretty hard it turns out, especially if you have seldom-used programming muscles like me and want to see immediate results.
 
-As a big fan of [Eric Fischer](https://www.mapbox.com/about/team/#eric-fischer) I've got pretty well into the Mapbox tools creating [things like this](http://gdunlop.github.io/Vector-maps-in-the-browser) along the way. I managed to use [tippecanoe](https://github.com/mapbox/tippecanoe) to build vector tilesets containing millions of points but couldn't figure out how to get the interactivity I was looking for. I also have no idea how to pronounce &quot;tippecanoe&quot;.
+As a big fan of [Eric Fischer](https://www.mapbox.com/about/team/#eric-fischer) I've got pretty into the Mapbox tools creating [things like this](http://gdunlop.github.io/Vector-maps-in-the-browser) along the way. I managed to use [tippecanoe](https://github.com/mapbox/tippecanoe) to build vector tilesets containing millions of points but couldn't figure out how to get the interactivity I was looking for. I also have no idea how to pronounce &quot;tippecanoe&quot;.
 
-Next up I tried [CartoDB](https://cartodb.com/) which I've used successfully for lots of other map visualisation projects, which meant I hit the 50MB limit on their free plan very quickly and was not inclined to take on a paid subscription.
+Next up I tried [CartoDB](https://cartodb.com/) which I've used successfully for lots of other map visualisation projects, which meant I hit the 50MB limit on their free plan very quickly.
 
 ### Tribulation
 
