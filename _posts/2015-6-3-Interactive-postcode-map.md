@@ -14,7 +14,7 @@ Several years ago I read Ben Fry's book [Visualizing Data](http://www.amazon.co.
 
 ### Perspiration
 
-Around this time I recruited an intern into OS Labs for 6 weeks - Joseph Braybrook. He mentioned Minecraft during interview, so naturally the first task I set him was to [build a Minecraft version of Great Britain](hhttps://www.ordnancesurvey.co.uk/blog/2013/09/minecraft-creating-a-map-of-great-britain/). The result got some great press coverage and the story has a happy ending as Joe took on a permanent role with OS.
+Around this time I recruited an intern into OS Labs for 6 weeks - Joseph Braybrook. He mentioned Minecraft during interview, so naturally the first task I set him was to [build a Minecraft version of Great Britain](https://www.ordnancesurvey.co.uk/blog/2013/09/minecraft-creating-a-map-of-great-britain/). The result got some great press coverage and the story has a happy ending as Joe took on a permanent role with OS.
 
 The remainder of Joe's internship was spent re-creating `zipdecode` using Ordnance Survey data. This worked great as a desktop application built in Processing but performance wasn't great and there was no chance of getting it working in a web browser.
 
