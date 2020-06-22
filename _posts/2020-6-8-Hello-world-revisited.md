@@ -7,7 +7,7 @@ It's 5 years since I said [Hello World]({{site.baseurl}}/Hello-world) with my fi
 ## Blog roll
 You're allowed one website or blog associated with your GitHub account - like this blog which is hosted at [https://gdunlop.github.io](https://gdunlop.github.io).
 
-But that's not all - you can also publish a website or blog from any repository you create - all at no cost. For example I write other blogs including this one about [Budget Boating](https://gdunlop.github.io/budget-boating).
+But that's not all - you can also publish a website or blog from any repository you create - all at no cost. For example I write other blogs including this one about [Budget Boating](https://gdunlop.github.io/budget-boating/Welcome-to-budget-boating).
 
 ## Static cling
 Blogs often require some sort of *dynamic* website, with articles served up from a database. This makes hosting more involved as dynamic sites place more requirements on hosting infrastructure.
