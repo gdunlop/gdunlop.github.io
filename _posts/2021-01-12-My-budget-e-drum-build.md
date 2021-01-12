@@ -89,7 +89,7 @@ This shows my initial set-up with the kit facing into the room:
 
 To make better use of space I shifted it around to face out the window:
 
-![Jobeky e-drum kit]({{site.baseurl}}/images/jobeky2.jpg)
+![Jobeky e-drum kit]({{site.baseurl}}/images/window.jpg)
 
 Finally, here is the eDRUMin mounted to a cymbal stand with the included bracket. Hi-hat controller and USB cable connect to the bottom. The device is powered over USB from my laptop but you can use a 9V power supply in situations where no computer is involved. Pads connect to the numbered inputs on the top. There is just enough room for the ten TCS sockets - this device really could not be any smaller!
 
