@@ -32,7 +32,7 @@ If the drum module has a MIDI In port, sounds can also be played in response to 
 The final step is to convert the sound which is in digital format using a Digital-to-Analog Convertor (DAC) resulting in an analog audio signal.
 
 ## Trigger processing
-This is the most complex phase as a clean trigger signal needs to be extracted from the incoming signal with minimal latency and no false triggers. Latency is the delay between the input (pad hit) and resulting output (drum sound) and the human's are surprisingly good at detecting this delay - anything over 10 milliseconds is noticeable.
+This is the most complex phase as a clean trigger signal needs to be extracted from the incoming signal with minimal latency and no false triggers. Latency is the delay between the input (pad hit) and resulting output (drum sound) and we are surprisingly good at detecting this delay - anything over 10 milliseconds is noticeable.
 
 Not only does this processing have to be performed in parallel for multiple input signals, it also needs to deal with crosstalk between these signals. Since drum pads are typically mounted on a stand there is some mechanical coupling between them. Striking the kick drum may trigger the tom drums, for example. Crosstalk cancellation algorithms are needed to prevent this happening. Trigger sensitivity is also important and varies between different types of trigger pad.
 

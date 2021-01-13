@@ -118,7 +118,7 @@ My reference point in terms of budget was intermediate kits such as Roland's TD-
 
 Grand total £1,130 excluding the laptop that is needed to run SD3 _(Dec 2020)_.
 
-I could have reduced the cost by choosing an alternative to Superior Drummer 3 - after all it has some features I may never use. However, the range and quality of the samples and the dedicated support for e-drums sold it. I was also blown away by the [meticulous process](https://www.youtube.com/watch?v=OY4Hrtble0Y) used to capture these samples.
+I could have reduced the cost by choosing a cheaper alternative to Superior Drummer 3 - after all it has some features I may never use. However, the range and quality of the samples and the dedicated support for e-drums sold it. I was also blown away by the [meticulous process](https://www.youtube.com/watch?v=OY4Hrtble0Y) used to capture these samples.
 
 Older intermediate Roland kits such as the TD-15KV sell on eBay for around the same price, generally with smaller pads all round and drum modules using technology that is over 10 years old, so I'm really happy with the outcome.
 
